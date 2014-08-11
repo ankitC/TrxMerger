@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="37783a32-9290-4d84-af1c-a972f54d260d" name="pranayp@PRANAY-TEST 2014-08-08 11:39:31" runUser="REDMOND\pranayp" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2014-08-08T11:39:31.7948691-07:00" queuing="2014-08-08T11:39:31.7948691-07:00" start="2014-08-08T11:39:31.7998691-07:00" finish="2014-08-08T11:42:09.9338691-07:00" />
+  <TestSettings name="default" id="00ad1ac8-2835-42fd-8608-1a8fe8755cd1">
+    <Execution>
+      <TestTypeSpecific />
+    </Execution>
+    <Deployment runDeploymentRoot="pranayp_PRANAY-TEST 2014-08-08 11_39_31" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="cb48e8b8-aa4d-4728-8598-deaf2998bfea" testId="7ccd74d4-30d2-3895-6ae0-81003a665311" testName="TestConnectorMappingDataUpgradeToV2" computerName="PRANAY-TEST" duration="00:00:49.7653069" startTime="2014-08-08T11:37:51.5888691-07:00" endTime="2014-08-08T11:39:31.6958691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb48e8b8-aa4d-4728-8598-deaf2998bfea" />
+    <UnitTestResult executionId="91f073c2-9ad6-4c6c-b235-955e295fbf57" testId="9aec86ee-d373-0683-acd9-af75e3117cce" testName="TestConnectorMembershipDataStorage" computerName="PRANAY-TEST" duration="00:00:21.3893597" startTime="2014-08-08T11:39:31.7158691-07:00" endTime="2014-08-08T11:39:53.1048691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91f073c2-9ad6-4c6c-b235-955e295fbf57" />
+    <UnitTestResult executionId="a4e621d7-c37c-47e6-afbf-502839f3c392" testId="72c781a9-651d-f24a-d790-7206eb94c5a0" testName="TestConnectorMembershipDataStorage" computerName="PRANAY-TEST" duration="00:00:00.0128814" startTime="2014-08-08T11:39:53.1048691-07:00" endTime="2014-08-08T11:39:53.1188691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4e621d7-c37c-47e6-afbf-502839f3c392" />
+    <UnitTestResult executionId="cec3bcba-0e79-467c-991f-5894f02aa91a" testId="3bc81ed3-63f0-f4f5-d836-10894f91538a" testName="TestAdd" computerName="PRANAY-TEST" duration="00:00:00.2177026" startTime="2014-08-08T11:39:53.1188691-07:00" endTime="2014-08-08T11:39:53.3368691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cec3bcba-0e79-467c-991f-5894f02aa91a" />
+    <UnitTestResult executionId="aea26d2a-e3ed-4e9d-a058-cbfd171128f9" testId="44b9c85f-7f5c-944e-9cb5-248ca7324a0f" testName="TestFlush" computerName="PRANAY-TEST" duration="00:00:00.2187781" startTime="2014-08-08T11:39:53.3368691-07:00" endTime="2014-08-08T11:39:53.5568691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aea26d2a-e3ed-4e9d-a058-cbfd171128f9" />
+    <UnitTestResult executionId="798e5bc9-1c93-4bc8-abf0-028f14d7f33a" testId="04472e54-c4b3-b428-9902-e3188bf06913" testName="TestAddIllegalStorageCharacters" computerName="PRANAY-TEST" duration="00:00:00.2071120" startTime="2014-08-08T11:39:53.5568691-07:00" endTime="2014-08-08T11:39:53.7638691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="798e5bc9-1c93-4bc8-abf0-028f14d7f33a" />
+    <UnitTestResult executionId="742051ce-315a-4a6c-beae-3d0611105139" testId="7281a549-3cb8-a222-0f6c-640e0f362601" testName="TestCombinations" computerName="PRANAY-TEST" duration="00:00:00.5343814" startTime="2014-08-08T11:39:53.7638691-07:00" endTime="2014-08-08T11:39:54.2988691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="742051ce-315a-4a6c-beae-3d0611105139" />
+    <UnitTestResult executionId="277b0d7a-8c66-4d9e-a3d6-351272342a70" testId="e49bbf5a-ea58-7417-f72c-27fdf7f7e04d" testName="TestUpdate" computerName="PRANAY-TEST" duration="00:00:00.2733496" startTime="2014-08-08T11:39:54.2988691-07:00" endTime="2014-08-08T11:39:54.5728691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="277b0d7a-8c66-4d9e-a3d6-351272342a70" />
+    <UnitTestResult executionId="04210889-44ed-4b44-a6fb-5e29df060c2e" testId="e1abdace-ba25-a81d-7dd3-76acf866e486" testName="TestUpdateIllegalCharacters" computerName="PRANAY-TEST" duration="00:00:00.2325246" startTime="2014-08-08T11:39:54.5728691-07:00" endTime="2014-08-08T11:39:54.8058691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04210889-44ed-4b44-a6fb-5e29df060c2e" />
+    <UnitTestResult executionId="edc1f403-a0c7-4d4b-b4c8-93b9fe7ba8eb" testId="2d03aae2-e22e-04d0-47e2-fb667ac89651" testName="TestAdd" computerName="PRANAY-TEST" duration="00:00:01.0722371" startTime="2014-08-08T11:39:54.8058691-07:00" endTime="2014-08-08T11:39:55.8788691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edc1f403-a0c7-4d4b-b4c8-93b9fe7ba8eb" />
+    <UnitTestResult executionId="33b2299c-10f8-4d56-af11-52c3d095fd82" testId="6a88000a-c302-8141-5f97-a6ced567e031" testName="TestFlush" computerName="PRANAY-TEST" duration="00:00:28.4152531" startTime="2014-08-08T11:39:55.8788691-07:00" endTime="2014-08-08T11:40:24.2928691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33b2299c-10f8-4d56-af11-52c3d095fd82" />
+    <UnitTestResult executionId="83c6c695-c382-469c-b9c9-f957081fa9b4" testId="49d2b8d2-65a2-19fc-4d27-b3ed539d1bfa" testName="TestAddIllegalStorageCharacters" computerName="PRANAY-TEST" duration="00:00:19.6594669" startTime="2014-08-08T11:40:24.2928691-07:00" endTime="2014-08-08T11:40:43.9518691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83c6c695-c382-469c-b9c9-f957081fa9b4" />
+    <UnitTestResult executionId="da1c1f10-f067-4cf6-8575-d6d83bb349ce" testId="a2705a06-c48d-08f0-aa9c-47e54ce86ebc" testName="TestCombinations" computerName="PRANAY-TEST" duration="00:00:32.4779094" startTime="2014-08-08T11:40:43.9518691-07:00" endTime="2014-08-08T11:41:16.4278691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da1c1f10-f067-4cf6-8575-d6d83bb349ce" />
+    <UnitTestResult executionId="127fac74-debe-4e34-b351-964df71fcfe6" testId="a4644bbb-1da6-0e14-2c27-4230fbd562dc" testName="TestUpdate" computerName="PRANAY-TEST" duration="00:00:01.0918656" startTime="2014-08-08T11:41:16.4288691-07:00" endTime="2014-08-08T11:41:17.5208691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="127fac74-debe-4e34-b351-964df71fcfe6" />
+    <UnitTestResult executionId="f2b88a5a-4c9a-47cd-bbd8-c696f245bf9e" testId="8e610927-8efe-fe22-41e8-f28459468f09" testName="TestUpdateIllegalCharacters" computerName="PRANAY-TEST" duration="00:00:51.1858409" startTime="2014-08-08T11:41:17.5208691-07:00" endTime="2014-08-08T11:42:08.7038691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2b88a5a-4c9a-47cd-bbd8-c696f245bf9e" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TestConnectorMappingDataUpgradeToV2" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="7ccd74d4-30d2-3895-6ae0-81003a665311">
+      <Execution id="cb48e8b8-aa4d-4728-8598-deaf2998bfea" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestConnectorMappingDataStorageFacade" name="TestConnectorMappingDataUpgradeToV2" />
+    </UnitTest>
+    <UnitTest name="TestConnectorMembershipDataStorage" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="9aec86ee-d373-0683-acd9-af75e3117cce">
+      <Execution id="91f073c2-9ad6-4c6c-b235-955e295fbf57" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestConnectorMembershipDataStorage" name="TestConnectorMembershipDataStorage" />
+    </UnitTest>
+    <UnitTest name="TestConnectorMembershipDataStorage" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="72c781a9-651d-f24a-d790-7206eb94c5a0">
+      <Execution id="a4e621d7-c37c-47e6-afbf-502839f3c392" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestMockConnectoMembershipDataStorage" name="TestConnectorMembershipDataStorage" />
+    </UnitTest>
+    <UnitTest name="TestAdd" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="3bc81ed3-63f0-f4f5-d836-10894f91538a">
+      <Execution id="cec3bcba-0e79-467c-991f-5894f02aa91a" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestMockConnectoMappingsDataStorage" name="TestAdd" />
+    </UnitTest>
+    <UnitTest name="TestFlush" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="44b9c85f-7f5c-944e-9cb5-248ca7324a0f">
+      <Execution id="aea26d2a-e3ed-4e9d-a058-cbfd171128f9" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestMockConnectoMappingsDataStorage" name="TestFlush" />
+    </UnitTest>
+    <UnitTest name="TestAddIllegalStorageCharacters" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="04472e54-c4b3-b428-9902-e3188bf06913">
+      <Execution id="798e5bc9-1c93-4bc8-abf0-028f14d7f33a" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestMockConnectoMappingsDataStorage" name="TestAddIllegalStorageCharacters" />
+    </UnitTest>
+    <UnitTest name="TestCombinations" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="7281a549-3cb8-a222-0f6c-640e0f362601">
+      <Execution id="742051ce-315a-4a6c-beae-3d0611105139" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestMockConnectoMappingsDataStorage" name="TestCombinations" />
+    </UnitTest>
+    <UnitTest name="TestUpdate" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="e49bbf5a-ea58-7417-f72c-27fdf7f7e04d">
+      <Execution id="277b0d7a-8c66-4d9e-a3d6-351272342a70" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestMockConnectoMappingsDataStorage" name="TestUpdate" />
+    </UnitTest>
+    <UnitTest name="TestUpdateIllegalCharacters" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="e1abdace-ba25-a81d-7dd3-76acf866e486">
+      <Execution id="04210889-44ed-4b44-a6fb-5e29df060c2e" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestMockConnectoMappingsDataStorage" name="TestUpdateIllegalCharacters" />
+    </UnitTest>
+    <UnitTest name="TestAdd" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="2d03aae2-e22e-04d0-47e2-fb667ac89651">
+      <Execution id="edc1f403-a0c7-4d4b-b4c8-93b9fe7ba8eb" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestConnectorMappingsDataStorage" name="TestAdd" />
+    </UnitTest>
+    <UnitTest name="TestFlush" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="6a88000a-c302-8141-5f97-a6ced567e031">
+      <Execution id="33b2299c-10f8-4d56-af11-52c3d095fd82" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestConnectorMappingsDataStorage" name="TestFlush" />
+    </UnitTest>
+    <UnitTest name="TestAddIllegalStorageCharacters" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="49d2b8d2-65a2-19fc-4d27-b3ed539d1bfa">
+      <Execution id="83c6c695-c382-469c-b9c9-f957081fa9b4" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestConnectorMappingsDataStorage" name="TestAddIllegalStorageCharacters" />
+    </UnitTest>
+    <UnitTest name="TestCombinations" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="a2705a06-c48d-08f0-aa9c-47e54ce86ebc">
+      <Execution id="da1c1f10-f067-4cf6-8575-d6d83bb349ce" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestConnectorMappingsDataStorage" name="TestCombinations" />
+    </UnitTest>
+    <UnitTest name="TestUpdate" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="a4644bbb-1da6-0e14-2c27-4230fbd562dc">
+      <Execution id="127fac74-debe-4e34-b351-964df71fcfe6" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestConnectorMappingsDataStorage" name="TestUpdate" />
+    </UnitTest>
+    <UnitTest name="TestUpdateIllegalCharacters" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testconnectordatastore\microsoft.activedirectory.connector.test.testconnectordatastore.dll" id="8e610927-8efe-fe22-41e8-f28459468f09">
+      <Execution id="f2b88a5a-4c9a-47cd-bbd8-c696f245bf9e" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestConnectorDataStore\Microsoft.ActiveDirectory.Connector.Test.TestConnectorDataStore.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.TestConnectorMappingsDataStorage" name="TestUpdateIllegalCharacters" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="7ccd74d4-30d2-3895-6ae0-81003a665311" executionId="cb48e8b8-aa4d-4728-8598-deaf2998bfea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9aec86ee-d373-0683-acd9-af75e3117cce" executionId="91f073c2-9ad6-4c6c-b235-955e295fbf57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72c781a9-651d-f24a-d790-7206eb94c5a0" executionId="a4e621d7-c37c-47e6-afbf-502839f3c392" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3bc81ed3-63f0-f4f5-d836-10894f91538a" executionId="cec3bcba-0e79-467c-991f-5894f02aa91a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="44b9c85f-7f5c-944e-9cb5-248ca7324a0f" executionId="aea26d2a-e3ed-4e9d-a058-cbfd171128f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="04472e54-c4b3-b428-9902-e3188bf06913" executionId="798e5bc9-1c93-4bc8-abf0-028f14d7f33a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7281a549-3cb8-a222-0f6c-640e0f362601" executionId="742051ce-315a-4a6c-beae-3d0611105139" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e49bbf5a-ea58-7417-f72c-27fdf7f7e04d" executionId="277b0d7a-8c66-4d9e-a3d6-351272342a70" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1abdace-ba25-a81d-7dd3-76acf866e486" executionId="04210889-44ed-4b44-a6fb-5e29df060c2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2d03aae2-e22e-04d0-47e2-fb667ac89651" executionId="edc1f403-a0c7-4d4b-b4c8-93b9fe7ba8eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6a88000a-c302-8141-5f97-a6ced567e031" executionId="33b2299c-10f8-4d56-af11-52c3d095fd82" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49d2b8d2-65a2-19fc-4d27-b3ed539d1bfa" executionId="83c6c695-c382-469c-b9c9-f957081fa9b4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2705a06-c48d-08f0-aa9c-47e54ce86ebc" executionId="da1c1f10-f067-4cf6-8575-d6d83bb349ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a4644bbb-1da6-0e14-2c27-4230fbd562dc" executionId="127fac74-debe-4e34-b351-964df71fcfe6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e610927-8efe-fe22-41e8-f28459468f09" executionId="f2b88a5a-4c9a-47cd-bbd8-c696f245bf9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="15" executed="15" passed="15" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

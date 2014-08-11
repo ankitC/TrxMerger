@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="90a39e73-7a4d-412b-b0e9-1070188efcb3" name="pranayp@PRANAY-TEST 2014-08-08 11:39:00" runUser="REDMOND\pranayp" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2014-08-08T11:39:00.5698691-07:00" queuing="2014-08-08T11:39:00.5708691-07:00" start="2014-08-08T11:39:00.5758691-07:00" finish="2014-08-08T11:40:04.9778691-07:00" />
+  <TestSettings name="default" id="d606925e-3ec1-40af-b814-d6b2c656b65e">
+    <Execution>
+      <TestTypeSpecific />
+    </Execution>
+    <Deployment runDeploymentRoot="pranayp_PRANAY-TEST 2014-08-08 11_39_00" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="03e1c838-325d-4000-b62c-df8aeeed7b66" testId="78efd8c4-dd5d-d5bd-371f-db4a6931e7d7" testName="TestSchedulerConfiguration" computerName="PRANAY-TEST" duration="00:00:00.3561415" startTime="2014-08-08T11:38:58.4908691-07:00" endTime="2014-08-08T11:38:59.4998691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="03e1c838-325d-4000-b62c-df8aeeed7b66" />
+    <UnitTestResult executionId="8adcc321-6cca-4092-aded-4ed1e58cacbf" testId="5b7f3d9c-c26e-485c-0c81-8958c30e5394" testName="TestSyncWorkerConfiguration" computerName="PRANAY-TEST" duration="00:00:00.0935548" startTime="2014-08-08T11:39:00.5348691-07:00" endTime="2014-08-08T11:39:00.6298691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8adcc321-6cca-4092-aded-4ed1e58cacbf">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Microsoft.ActiveDirectory.Connector.Test.ConfigurationUnitTest.TestSyncWorkerConfiguration threw exception: 
+System.Configuration.ConfigurationErrorsException: An error occurred creating the configuration section handler for netsuite: Could not load file or assembly 'Microsoft.ActiveDirectory.Connector.NetSuite' or one of its dependencies. The system cannot find the file specified. (f:\src\Adiam_Cloud_Nightly_Tester\sources\dev\Services\SyncFabric\Controller\SynchronizationWorker\app.config line 18) ---&gt; System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.ActiveDirectory.Connector.NetSuite' or one of its dependencies. The system cannot find the file specified.WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+</Message>
+          <StackTrace>    at System.Configuration.TypeUtil.GetTypeWithReflectionPermission(IInternalConfigHost host, String typeString, Boolean throwOnError)
+   at System.Configuration.MgmtConfigurationRecord.CreateSectionFactory(FactoryRecord factoryRecord)
+   at System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean&amp; isRootDeclaredHere)
+ --- End of inner exception stack trace ---
+    at System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean&amp; isRootDeclaredHere)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object&amp; result, Object&amp; resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey, Boolean getLkg, Boolean checkPermission)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ConfigurationSectionCollection.Get(String name)
+   at System.Configuration.ConfigurationSectionCollection.Get(Int32 index)
+   at System.Configuration.ConfigurationSectionCollection.get_Item(Int32 index)
+   at System.Configuration.ConfigurationSectionCollection.&lt;GetEnumerator&gt;d__0.MoveNext()
+   at Microsoft.ActiveDirectory.Connector.Test.ConfigurationUnitTest.TestConfiguration(String filePath) in f:\src\Adiam_Cloud_Nightly_Tester\sources\test\Services\SyncFabric\Controller\EnvironmentTests\TestIntegrationEnvironment\ConfigurationUnitTest.cs:line 28
+   at Microsoft.ActiveDirectory.Connector.Test.ConfigurationUnitTest.TestSyncWorkerConfiguration() in f:\src\Adiam_Cloud_Nightly_Tester\sources\test\Services\SyncFabric\Controller\EnvironmentTests\TestIntegrationEnvironment\ConfigurationUnitTest.cs:line 42
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="02c9d81d-354a-47bb-b0d2-a8afa358e369" testId="72186436-1343-7837-703a-68f598c35228" testName="TestGetCredentials" computerName="PRANAY-TEST" duration="00:00:55.5999461" startTime="2014-08-08T11:39:00.6608691-07:00" endTime="2014-08-08T11:39:58.7878691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="02c9d81d-354a-47bb-b0d2-a8afa358e369" />
+    <UnitTestResult executionId="6743c369-d968-40ae-93e6-b2db17c4c7a0" testId="8d376db3-310b-d7f2-0b21-286a7faf39d4" testName="TestSetCredentials" computerName="PRANAY-TEST" duration="00:00:03.0927999" startTime="2014-08-08T11:39:58.8058691-07:00" endTime="2014-08-08T11:40:01.8998691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6743c369-d968-40ae-93e6-b2db17c4c7a0" />
+    <UnitTestResult executionId="8859053e-8aa5-4285-9b87-c87c5f36d72d" testId="b7e6520b-7191-5241-de17-81d24afdcf71" testName="TestSetUserSecrets" computerName="PRANAY-TEST" duration="00:00:01.7230871" startTime="2014-08-08T11:40:01.9128691-07:00" endTime="2014-08-08T11:40:03.6368691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8859053e-8aa5-4285-9b87-c87c5f36d72d" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TestSchedulerConfiguration" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testintegrationenvironment.dll" id="78efd8c4-dd5d-d5bd-371f-db4a6931e7d7">
+      <Execution id="03e1c838-325d-4000-b62c-df8aeeed7b66" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestIntegrationEnvironment.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.ConfigurationUnitTest" name="TestSchedulerConfiguration" />
+    </UnitTest>
+    <UnitTest name="TestSyncWorkerConfiguration" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testintegrationenvironment.dll" id="5b7f3d9c-c26e-485c-0c81-8958c30e5394">
+      <Execution id="8adcc321-6cca-4092-aded-4ed1e58cacbf" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestIntegrationEnvironment.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.ConfigurationUnitTest" name="TestSyncWorkerConfiguration" />
+    </UnitTest>
+    <UnitTest name="TestGetCredentials" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testintegrationenvironment.dll" id="72186436-1343-7837-703a-68f598c35228">
+      <Execution id="02c9d81d-354a-47bb-b0d2-a8afa358e369" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestIntegrationEnvironment.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.CredentialManagerUnitTest" name="TestGetCredentials" />
+    </UnitTest>
+    <UnitTest name="TestSetCredentials" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testintegrationenvironment.dll" id="8d376db3-310b-d7f2-0b21-286a7faf39d4">
+      <Execution id="6743c369-d968-40ae-93e6-b2db17c4c7a0" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestIntegrationEnvironment.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.CredentialManagerUnitTest" name="TestSetCredentials" />
+    </UnitTest>
+    <UnitTest name="TestSetUserSecrets" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testintegrationenvironment.dll" id="b7e6520b-7191-5241-de17-81d24afdcf71">
+      <Execution id="8859053e-8aa5-4285-9b87-c87c5f36d72d" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestIntegrationEnvironment.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.CredentialManagerUnitTest" name="TestSetUserSecrets" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="78efd8c4-dd5d-d5bd-371f-db4a6931e7d7" executionId="03e1c838-325d-4000-b62c-df8aeeed7b66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b7f3d9c-c26e-485c-0c81-8958c30e5394" executionId="8adcc321-6cca-4092-aded-4ed1e58cacbf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72186436-1343-7837-703a-68f598c35228" executionId="02c9d81d-354a-47bb-b0d2-a8afa358e369" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8d376db3-310b-d7f2-0b21-286a7faf39d4" executionId="6743c369-d968-40ae-93e6-b2db17c4c7a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b7e6520b-7191-5241-de17-81d24afdcf71" executionId="8859053e-8aa5-4285-9b87-c87c5f36d72d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="4" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

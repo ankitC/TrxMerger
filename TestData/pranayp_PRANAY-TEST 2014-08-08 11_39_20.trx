@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d450476e-2b11-4b89-b1b3-31de298c3a82" name="pranayp@PRANAY-TEST 2014-08-08 11:39:20" runUser="REDMOND\pranayp" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2014-08-08T11:39:20.1798691-07:00" queuing="2014-08-08T11:39:20.1898691-07:00" start="2014-08-08T11:39:20.1968691-07:00" finish="2014-08-08T11:45:13.0768691-07:00" />
+  <TestSettings name="default" id="55c9a1c8-9fd5-4ebb-a5bc-4b1318948192">
+    <Execution>
+      <TestTypeSpecific />
+    </Execution>
+    <Deployment runDeploymentRoot="pranayp_PRANAY-TEST 2014-08-08 11_39_20" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="08ea26a9-b642-4555-be7e-fb6ee42b0d00" testId="19eeca2b-ff0e-f272-ec73-72a31cf8e95e" testName="SalesForceSandbox_TestProfilesImport" computerName="PRANAY-TEST" duration="00:00:34.6273869" startTime="2014-08-08T11:38:44.7218691-07:00" endTime="2014-08-08T11:39:19.8258691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08ea26a9-b642-4555-be7e-fb6ee42b0d00" />
+    <UnitTestResult executionId="f0a42810-0d74-4648-a8ca-5eeb663dbd78" testId="2f2c1ef7-4a9e-871d-d4b6-17c151c61b41" testName="TestUpdate" computerName="PRANAY-TEST" duration="00:00:17.1818250" startTime="2014-08-08T11:39:20.2168691-07:00" endTime="2014-08-08T11:39:37.4008691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f0a42810-0d74-4648-a8ca-5eeb663dbd78" />
+    <UnitTestResult executionId="727eaddb-5759-4f3c-a2d9-b6a6ef13101f" testId="6adc519e-93dc-8188-14a8-bce7d8612a6d" testName="TestAllStaticProfiles" computerName="PRANAY-TEST" duration="00:00:15.8585442" startTime="2014-08-08T11:39:37.4138691-07:00" endTime="2014-08-08T11:39:53.2728691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="727eaddb-5759-4f3c-a2d9-b6a6ef13101f" />
+    <UnitTestResult executionId="dbb28ec1-70ff-497c-93aa-1371cb747186" testId="4e13138b-b6de-e265-5875-6d7fb77a7962" testName="TestErrorCasesResetPassword" computerName="PRANAY-TEST" duration="00:00:06.2890905" startTime="2014-08-08T11:39:53.2918691-07:00" endTime="2014-08-08T11:39:59.5838691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbb28ec1-70ff-497c-93aa-1371cb747186" />
+    <UnitTestResult executionId="9494f574-6c5d-42db-81e5-f98a7d4840d5" testId="5aa38983-0dfb-4a60-357c-2d8782cb64b1" testName="TestProfilesImport" computerName="PRANAY-TEST" duration="00:00:03.5196414" startTime="2014-08-08T11:39:59.5998691-07:00" endTime="2014-08-08T11:40:03.1208691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9494f574-6c5d-42db-81e5-f98a7d4840d5" />
+    <UnitTestResult executionId="bd204d7f-b3b2-4635-9a51-d9c06bd720dc" testId="aea31092-71a2-80ae-19f4-8df5ffa87250" testName="TestImport" computerName="PRANAY-TEST" duration="00:00:06.1493574" startTime="2014-08-08T11:40:03.1818691-07:00" endTime="2014-08-08T11:40:09.3338691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd204d7f-b3b2-4635-9a51-d9c06bd720dc" />
+    <UnitTestResult executionId="c88f9dcb-8247-431a-b925-97cb4c61be0e" testId="b79dcff5-3090-1c49-8559-df4da7146816" testName="TestInsert" computerName="PRANAY-TEST" duration="00:00:09.0017788" startTime="2014-08-08T11:40:09.3438691-07:00" endTime="2014-08-08T11:40:18.3458691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c88f9dcb-8247-431a-b925-97cb4c61be0e" />
+    <UnitTestResult executionId="182d6d77-6780-4c74-9b5e-cc743d0a3fa3" testId="d15666db-0b53-e697-3720-950459332fbc" testName="TestUpdateOnSoftDelete" computerName="PRANAY-TEST" duration="00:00:18.9314665" startTime="2014-08-08T11:40:18.3538691-07:00" endTime="2014-08-08T11:40:37.2858691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="182d6d77-6780-4c74-9b5e-cc743d0a3fa3" />
+    <UnitTestResult executionId="c19d5c70-d03d-4dcc-b1f5-2f3303425963" testId="6457ec6b-7735-9658-4d8f-7b6137491705" testName="TestErrorCasesImport" computerName="PRANAY-TEST" duration="00:00:30.4732064" startTime="2014-08-08T11:40:37.3228691-07:00" endTime="2014-08-08T11:41:07.7968691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c19d5c70-d03d-4dcc-b1f5-2f3303425963" />
+    <UnitTestResult executionId="6d6c0526-f209-40c2-b62f-f4199846546f" testId="246e626b-75c4-ea1c-bc83-d4056cefd66a" testName="TestErrorCasesExport" computerName="PRANAY-TEST" duration="00:00:26.8662987" startTime="2014-08-08T11:41:07.8128691-07:00" endTime="2014-08-08T11:41:34.6788691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d6c0526-f209-40c2-b62f-f4199846546f" />
+    <UnitTestResult executionId="69f37744-a5d3-42ab-876d-4a898b2d0fb3" testId="61a388f4-2ef0-3528-4a00-ecea6dee217e" testName="TestAllStaticProfiles" computerName="PRANAY-TEST" duration="00:01:12.0787013" startTime="2014-08-08T11:41:34.7018691-07:00" endTime="2014-08-08T11:42:46.7768691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69f37744-a5d3-42ab-876d-4a898b2d0fb3" />
+    <UnitTestResult executionId="cdd97528-1c58-4f50-8dc9-88bcdf9623e1" testId="074bd96e-e8a5-8ac0-e401-67618904fe55" testName="TestErrorCasesResetPassword" computerName="PRANAY-TEST" duration="00:00:23.6176825" startTime="2014-08-08T11:42:46.7908691-07:00" endTime="2014-08-08T11:43:10.4078691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cdd97528-1c58-4f50-8dc9-88bcdf9623e1" />
+    <UnitTestResult executionId="b391c7db-3331-44bd-bc4f-55c6904f8c74" testId="3e385389-0ff3-370c-c5c2-a19f1c4e777f" testName="TestProfilesImport" computerName="PRANAY-TEST" duration="00:00:13.1786907" startTime="2014-08-08T11:43:10.4158691-07:00" endTime="2014-08-08T11:43:23.5948691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b391c7db-3331-44bd-bc4f-55c6904f8c74" />
+    <UnitTestResult executionId="bde9030f-3300-451a-9727-40c3ed36528d" testId="29ce40d4-7595-ad8b-e1b1-ddc154a7724b" testName="TestImport" computerName="PRANAY-TEST" duration="00:00:25.2181453" startTime="2014-08-08T11:43:23.5998691-07:00" endTime="2014-08-08T11:43:48.8178691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bde9030f-3300-451a-9727-40c3ed36528d" />
+    <UnitTestResult executionId="0153e8c5-0cf0-4977-931c-5444bce40f1d" testId="abd53c1c-08ba-09f7-769d-1062ce01c207" testName="TestInsert" computerName="PRANAY-TEST" duration="00:00:20.7026325" startTime="2014-08-08T11:43:48.8248691-07:00" endTime="2014-08-08T11:44:09.5278691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0153e8c5-0cf0-4977-931c-5444bce40f1d" />
+    <UnitTestResult executionId="150157b8-aed3-48c8-8410-e6f31428570a" testId="756727b2-e98e-61ac-09fd-f0257a209aed" testName="TestUpdateOnSoftDelete" computerName="PRANAY-TEST" duration="00:01:02.3494925" startTime="2014-08-08T11:44:09.5358691-07:00" endTime="2014-08-08T11:45:11.8818691-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="150157b8-aed3-48c8-8410-e6f31428570a" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="SalesForceSandbox_TestProfilesImport" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="19eeca2b-ff0e-f272-ec73-72a31cf8e95e">
+      <Execution id="08ea26a9-b642-4555-be7e-fb6ee42b0d00" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceSandboxProxyAdapterUnitTest" name="SalesForceSandbox_TestProfilesImport" />
+    </UnitTest>
+    <UnitTest name="TestUpdate" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="2f2c1ef7-4a9e-871d-d4b6-17c151c61b41">
+      <Execution id="f0a42810-0d74-4648-a8ca-5eeb663dbd78" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterSoapUnitTest" name="TestUpdate" />
+    </UnitTest>
+    <UnitTest name="TestAllStaticProfiles" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="6adc519e-93dc-8188-14a8-bce7d8612a6d">
+      <Execution id="727eaddb-5759-4f3c-a2d9-b6a6ef13101f" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterSoapUnitTest" name="TestAllStaticProfiles" />
+    </UnitTest>
+    <UnitTest name="TestErrorCasesResetPassword" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="4e13138b-b6de-e265-5875-6d7fb77a7962">
+      <Execution id="dbb28ec1-70ff-497c-93aa-1371cb747186" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterSoapUnitTest" name="TestErrorCasesResetPassword" />
+    </UnitTest>
+    <UnitTest name="TestProfilesImport" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="5aa38983-0dfb-4a60-357c-2d8782cb64b1">
+      <Execution id="9494f574-6c5d-42db-81e5-f98a7d4840d5" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterSoapUnitTest" name="TestProfilesImport" />
+    </UnitTest>
+    <UnitTest name="TestImport" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="aea31092-71a2-80ae-19f4-8df5ffa87250">
+      <Execution id="bd204d7f-b3b2-4635-9a51-d9c06bd720dc" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterSoapUnitTest" name="TestImport" />
+    </UnitTest>
+    <UnitTest name="TestInsert" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="b79dcff5-3090-1c49-8559-df4da7146816">
+      <Execution id="c88f9dcb-8247-431a-b925-97cb4c61be0e" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterSoapUnitTest" name="TestInsert" />
+    </UnitTest>
+    <UnitTest name="TestUpdateOnSoftDelete" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="d15666db-0b53-e697-3720-950459332fbc">
+      <Execution id="182d6d77-6780-4c74-9b5e-cc743d0a3fa3" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterSoapUnitTest" name="TestUpdateOnSoftDelete" />
+    </UnitTest>
+    <UnitTest name="TestErrorCasesImport" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="6457ec6b-7735-9658-4d8f-7b6137491705">
+      <Execution id="c19d5c70-d03d-4dcc-b1f5-2f3303425963" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterBulkUnitTest" name="TestErrorCasesImport" />
+    </UnitTest>
+    <UnitTest name="TestErrorCasesExport" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="246e626b-75c4-ea1c-bc83-d4056cefd66a">
+      <Execution id="6d6c0526-f209-40c2-b62f-f4199846546f" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterBulkUnitTest" name="TestErrorCasesExport" />
+    </UnitTest>
+    <UnitTest name="TestAllStaticProfiles" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="61a388f4-2ef0-3528-4a00-ecea6dee217e">
+      <Execution id="69f37744-a5d3-42ab-876d-4a898b2d0fb3" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterBulkUnitTest" name="TestAllStaticProfiles" />
+    </UnitTest>
+    <UnitTest name="TestErrorCasesResetPassword" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="074bd96e-e8a5-8ac0-e401-67618904fe55">
+      <Execution id="cdd97528-1c58-4f50-8dc9-88bcdf9623e1" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterBulkUnitTest" name="TestErrorCasesResetPassword" />
+    </UnitTest>
+    <UnitTest name="TestProfilesImport" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="3e385389-0ff3-370c-c5c2-a19f1c4e777f">
+      <Execution id="b391c7db-3331-44bd-bc4f-55c6904f8c74" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterBulkUnitTest" name="TestProfilesImport" />
+    </UnitTest>
+    <UnitTest name="TestImport" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="29ce40d4-7595-ad8b-e1b1-ddc154a7724b">
+      <Execution id="bde9030f-3300-451a-9727-40c3ed36528d" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterBulkUnitTest" name="TestImport" />
+    </UnitTest>
+    <UnitTest name="TestInsert" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="abd53c1c-08ba-09f7-769d-1062ce01c207">
+      <Execution id="0153e8c5-0cf0-4977-931c-5444bce40f1d" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterBulkUnitTest" name="TestInsert" />
+    </UnitTest>
+    <UnitTest name="TestUpdateOnSoftDelete" storage="f:\src\adiam_cloud_nightly_tester\bins\debug\amd64\syncfabric\tests\testintegrationenvironment\microsoft.activedirectory.connector.test.testsalesforceproxyadapter.dll" id="756727b2-e98e-61ac-09fd-f0257a209aed">
+      <Execution id="150157b8-aed3-48c8-8410-e6f31428570a" />
+      <TestMethod codeBase="f:\src\Adiam_Cloud_Nightly_Tester\bins\debug\amd64\SyncFabric\Tests\TestIntegrationEnvironment\Microsoft.ActiveDirectory.Connector.Test.TestSalesForceProxyAdapter.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Microsoft.ActiveDirectory.Connector.Test.SalesForceProxyAdapterBulkUnitTest" name="TestUpdateOnSoftDelete" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="19eeca2b-ff0e-f272-ec73-72a31cf8e95e" executionId="08ea26a9-b642-4555-be7e-fb6ee42b0d00" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f2c1ef7-4a9e-871d-d4b6-17c151c61b41" executionId="f0a42810-0d74-4648-a8ca-5eeb663dbd78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6adc519e-93dc-8188-14a8-bce7d8612a6d" executionId="727eaddb-5759-4f3c-a2d9-b6a6ef13101f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e13138b-b6de-e265-5875-6d7fb77a7962" executionId="dbb28ec1-70ff-497c-93aa-1371cb747186" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5aa38983-0dfb-4a60-357c-2d8782cb64b1" executionId="9494f574-6c5d-42db-81e5-f98a7d4840d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aea31092-71a2-80ae-19f4-8df5ffa87250" executionId="bd204d7f-b3b2-4635-9a51-d9c06bd720dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b79dcff5-3090-1c49-8559-df4da7146816" executionId="c88f9dcb-8247-431a-b925-97cb4c61be0e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d15666db-0b53-e697-3720-950459332fbc" executionId="182d6d77-6780-4c74-9b5e-cc743d0a3fa3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6457ec6b-7735-9658-4d8f-7b6137491705" executionId="c19d5c70-d03d-4dcc-b1f5-2f3303425963" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="246e626b-75c4-ea1c-bc83-d4056cefd66a" executionId="6d6c0526-f209-40c2-b62f-f4199846546f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="61a388f4-2ef0-3528-4a00-ecea6dee217e" executionId="69f37744-a5d3-42ab-876d-4a898b2d0fb3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="074bd96e-e8a5-8ac0-e401-67618904fe55" executionId="cdd97528-1c58-4f50-8dc9-88bcdf9623e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e385389-0ff3-370c-c5c2-a19f1c4e777f" executionId="b391c7db-3331-44bd-bc4f-55c6904f8c74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="29ce40d4-7595-ad8b-e1b1-ddc154a7724b" executionId="bde9030f-3300-451a-9727-40c3ed36528d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="abd53c1c-08ba-09f7-769d-1062ce01c207" executionId="0153e8c5-0cf0-4977-931c-5444bce40f1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="756727b2-e98e-61ac-09fd-f0257a209aed" executionId="150157b8-aed3-48c8-8410-e6f31428570a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="16" executed="16" passed="16" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>
