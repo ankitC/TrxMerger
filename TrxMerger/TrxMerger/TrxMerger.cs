@@ -180,11 +180,6 @@ namespace TRXMerge
 
             ////locate and update times
             XmlNode oTimes = oDoc.SelectSingleNode("//Times");
-            //add a new attribute elapsed time, original trx would not have that
-            XmlAttribute elapsed = oDoc.CreateAttribute("elapsedtime");
-            elapsed.Value = CalculateSummaryTime(oDoc).ToString();
-            oTimes.Attributes.Append(elapsed);
-
             oDoc.Save(fileName);
 
         }
