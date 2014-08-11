@@ -7,13 +7,15 @@ using System.IO;
 
 namespace TRXMerge
 {
-    class TrxMerrger
+    public class TrxMerger
     {
+
+        private static const string SectionResults = @"/Results";
+        private static const string SectionTestDefinitions = @"/TestDefinitions";
+        private static const string SectionTestEntries = @"/TestEntries";
 
         static int Main(string[] args)
         {
-
-                
                 System.Xml.XmlDocument oDocFirst = new XmlDocument();
                 oDocFirst.Load(MakeCompatXML(args[0]));
 
@@ -21,37 +23,8 @@ namespace TRXMerge
                 oDocSecond.Load(MakeCompatXML(args[1]));
 
                 ////locate sections in first and append data from second...
-                XmlNode oNodeWhereInsert = oDocFirst.SelectSingleNode("//TestDefinitions");
-
-                int i = 0;
-                while (oDocSecond.SelectSingleNode("//TestDefinitions").ChildNodes.Count != i)
-                {
-                    ////insert test only if it is not already present
-                    if (!IfTestExists(oDocFirst, oDocSecond.SelectSingleNode("//TestDefinitions").ChildNodes[i].Attributes["name"].Value))
-                    {
-                        oNodeWhereInsert.AppendChild(oDocFirst.ImportNode(oDocSecond.SelectSingleNode("//TestDefinitions").ChildNodes[i], true));
-                    }
-                    i++;
-                }
-
-                ////insert new results and update existing if present
-                XmlNode oNodeWhereInsertResult = oDocFirst.SelectSingleNode("//Results");
-                i = 0;
-                while (oDocSecond.SelectSingleNode("//Results").ChildNodes.Count != i)
-                {
-                    XmlNode oldNode;
-
-                    if (IfResultExists(oDocFirst, oDocSecond.SelectSingleNode("//Results").ChildNodes[i].Attributes["testName"].Value, out oldNode))
-                    {
-                        oNodeWhereInsertResult.RemoveChild(oldNode);
-                        oNodeWhereInsertResult.AppendChild(oDocFirst.ImportNode(oDocSecond.SelectSingleNode("//Results").ChildNodes[i], true));
-                    }
-                    else
-                    {
-                        oNodeWhereInsertResult.AppendChild(oDocFirst.ImportNode(oDocSecond.SelectSingleNode("//Results").ChildNodes[i], true));
-                    }
-                    i++;
-                }
+                MergeSection(oDocFirst, oDocSecond, TrxMerger.SectionTestDefinitions);
+                MergeSection(oDocFirst, oDocSecond, TrxMerger.SectionResults);
 
                 if (File.Exists(args[2]))
                 {
@@ -62,6 +35,22 @@ namespace TRXMerge
                 SetSummary(args[2]);
                 return 0;
             }
+
+        private static void MergeSection(System.Xml.XmlDocument oDocFirst, System.Xml.XmlDocument oDocSecond, string sectionName)
+        {
+            XmlNode oNodeWhereInsert = oDocFirst.SelectSingleNode(sectionName);
+
+            int i = 0;
+            while (oDocSecond.SelectSingleNode(sectionName).ChildNodes.Count != i)
+            {
+                ////insert test only if it is not already present
+                if (!IfTestExists(oDocFirst, oDocSecond.SelectSingleNode(sectionName).ChildNodes[i].Attributes["name"].Value))
+                {
+                    oNodeWhereInsert.AppendChild(oDocFirst.ImportNode(oDocSecond.SelectSingleNode(sectionName).ChildNodes[i], true));
+                }
+                i++;
+            }
+        }
 
         public static summary GetSummary(XmlDocument doc)
         {
