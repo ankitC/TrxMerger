@@ -43,11 +43,7 @@ namespace TRXMerge
             int i = 0;
             while (oDocSecond.SelectSingleNode(sectionName).ChildNodes.Count != i)
             {
-                ////insert test only if it is not already present
-                if (!IfTestExists(oDocFirst, oDocSecond.SelectSingleNode(sectionName).ChildNodes[i].Attributes["name"].Value))
-                {
-                    oNodeWhereInsert.AppendChild(oDocFirst.ImportNode(oDocSecond.SelectSingleNode(sectionName).ChildNodes[i], true));
-                }
+                oNodeWhereInsert.AppendChild(oDocFirst.ImportNode(oDocSecond.SelectSingleNode(sectionName).ChildNodes[i], true));
                 i++;
             }
         }
