@@ -10,53 +10,64 @@ namespace TRXMerge
     public class TrxMerger
     {
 
-        private static const string SectionResults = @"/Results";
-        private static const string SectionTestDefinitions = @"/TestDefinitions";
-        private static const string SectionTestEntries = @"/TestEntries";
+        private const string SectionResults = @"/Results";
+        private const string SectionTestDefinitions = @"/TestDefinitions";
+        private const string SectionTestEntries = @"/TestEntries";
 
-        private static const string ResultsPathTemplate = "{0}\FinalResults.trx"
+        private const string ResultsPathTemplate = "{0}\\FinalResults.trx";
 
         static int Main(string[] args)
-        {       
+        {
             string[] fileNames = TrxMerger.FindTrxFiles(args[0]);
-                
-            if(fileNames.Length > 1)
+#if DEBUG
+            foreach (string fileName in fileNames)
+            {
+                Console.WriteLine(fileName);
+            }
+            Console.WriteLine(fileNames.Length);
+#endif
+      
+            if (fileNames.Length >= 1)
             {
                 System.Xml.XmlDocument oDocFirst = new XmlDocument();
-                oDocFirst.Load(MakeCompatXML(args[0]));
-            
-                System.Xml.XmlDocument oDocSecond = new XmlDocument();
-                oDocSecond.Load(MakeCompatXML(args[1]));
+                oDocFirst.Load(MakeCompatXML(fileNames[0]));
 
-                ////locate sections in first and append data from second...
-                MergeSection(oDocFirst, oDocSecond, TrxMerger.SectionTestDefinitions);
-                MergeSection(oDocFirst, oDocSecond, TrxMerger.SectionResults);
-                MergeSection(oDocFirst, oDocSecond, TrxMerger.SectionTestEntries);
+                for (int i = 1; i < fileNames.Length; i++)
+                {
+                    System.Xml.XmlDocument oDocSecond = new XmlDocument();
+                    oDocSecond.Load(MakeCompatXML(fileNames[i]));
+
+                    ////locate sections in first and append data from second...
+                    MergeSection(out oDocFirst, oDocSecond, TrxMerger.SectionTestDefinitions);
+                    MergeSection(out oDocFirst, oDocSecond, TrxMerger.SectionResults);
+                    MergeSection(out oDocFirst, oDocSecond, TrxMerger.SectionTestEntries);
+                }
+
+                string resultsFilePath = string.Format(TrxMerger.ResultsPathTemplate, args[0]);
+                if (File.Exists(resultsFilePath))
+                {
+                    File.Delete(resultsFilePath);
+                }
+                oDocFirst.Save(resultsFilePath);
+
+                SetSummary(resultsFilePath);
             }
 
-             string resultsFilePath = string.Format(TrxMerger.ResultsPathTemplate, args[0]);
-             if (File.Exists(resultsFilePath))
-             {
-                 File.Delete(resultsFilePath);
-             }
-             oDocFirst.Save(resultsFilePath);
-
-             SetSummary(resultsFilePath);
-             return 0;
-            }
-
-    private static string[] FindTrxFiles(string path)
-    {
- 	    string resultsFilePath = string.Format(TrxMerger.ResultsPathTemplate, path);
-        if (File.Exists(resultsFilePath))
-        {
-            File.Delete(resultsFilePath);
+            return 0;
         }
 
-        List<string> resultsFileList = new List<string>();
-        string[] trxFilesList= Directory.GetFiles(path, "*.trx", SearchOption.TopDirectoryOnly);
-        return trxFilesList;
-    }
+        private static string[] FindTrxFiles(string path)
+        {
+            string resultsFilePath = string.Format(TrxMerger.ResultsPathTemplate, path);
+            if (File.Exists(resultsFilePath))
+            {
+                File.Delete(resultsFilePath);
+            }
+
+            List<string> resultsFileList = new List<string>();
+            string[] trxFilesList = Directory.GetFiles(path, "*.trx", SearchOption.TopDirectoryOnly);
+            return trxFilesList;
+        }
 
         private static void MergeSection(System.Xml.XmlDocument oDocFirst, System.Xml.XmlDocument oDocSecond, string sectionName)
         {
@@ -208,9 +219,9 @@ namespace TRXMerge
             }
             return sDiff;
         }
-    }
+    }  
 
-    struct summary
+    public struct summary
     {
         public int total;
         public int executed;
