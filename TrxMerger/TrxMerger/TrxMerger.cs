@@ -12,19 +12,11 @@ namespace TRXMerge
 
         static int Main(string[] args)
         {
-            string message = "\nUsage: TRXMerge <first trx file> <second trx file> <output XML file>\n\nInfo: Changes from second trx file will be overwritten on first if there are matching test cases";
-            if (args.Length < 3)
-            {
-                Console.WriteLine(message);
-                return 1;
-            }
-            else
-            {
-                if (!File.Exists(args[0])) { Console.WriteLine(message); return 1; }
+
+                
                 System.Xml.XmlDocument oDocFirst = new XmlDocument();
                 oDocFirst.Load(MakeCompatXML(args[0]));
 
-                if (!File.Exists(args[1])) { Console.WriteLine(message); return 1; }
                 System.Xml.XmlDocument oDocSecond = new XmlDocument();
                 oDocSecond.Load(MakeCompatXML(args[1]));
 
@@ -70,8 +62,6 @@ namespace TRXMerge
                 SetSummary(args[2]);
                 return 0;
             }
-
-        }
 
         public static summary GetSummary(XmlDocument doc)
         {
