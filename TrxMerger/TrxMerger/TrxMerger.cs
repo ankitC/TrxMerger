@@ -15,20 +15,13 @@ namespace TRXMerge
         private const string SectionTestEntries = @"//TestEntries";
 
         private const string ResultsPathTemplate = "{0}\\FinalResults.trx";
-        private string header = null;
+        private static string header = null;
 
         static int Main(string[] args)
         {
             string[] fileNames = TrxMerger.FindTrxFiles(args[0]);
-#if DEBUG
-            foreach (string fileName in fileNames)
-            {
-                Console.WriteLine(fileName);
-            }
-            Console.WriteLine(fileNames.Length);
-#endif
-            TrxMerger merger = new TrxMerger();
-            merger.SaveHeaderInfo(fileNames[0]);
+
+            TrxMerger.SaveHeaderInfo(fileNames[0]);
 
             if (fileNames.Length >= 1)
             {
@@ -54,7 +47,7 @@ namespace TRXMerge
                 oDocFirst.Save(resultsFilePath);
 
                 SetSummary(resultsFilePath);
-                merger.WriteHeaderInfo(resultsFilePath);
+                TrxMerger.WriteHeaderInfo(resultsFilePath);
             }
 
             return 0;
@@ -113,20 +106,20 @@ namespace TRXMerge
             return s;
         }
 
-        public void SaveHeaderInfo(string input)
+        public static void SaveHeaderInfo(string input)
         {
             string[] file = File.ReadAllLines(input);
             foreach (string line in file)
             {
                 if (line.Contains("<TestRun id"))
                 {
-                    this.header = line.ToString();
+                    TrxMerger.header = line.ToString();
                     break;
                }
             }
         }
 
-        public string WriteHeaderInfo(string input)
+        public static string WriteHeaderInfo(string input)
         {
             StringBuilder newFile = new StringBuilder();
             string temp = "";
@@ -136,7 +129,7 @@ namespace TRXMerge
             {
                 if (line.Contains("<TestRun>"))
                 {
-                    temp = line.Replace(line.ToString(), this.header);
+                    temp = line.Replace(line.ToString(), TrxMerger.header);
                     newFile.Append(temp + "\r");
                     continue;
                 }
