@@ -15,6 +15,7 @@ namespace TRXMerge
         private const string SectionTestEntries = @"//TestEntries";
 
         private const string ResultsPathTemplate = "{0}\\FinalResults.trx";
+        private string header = null;
 
         static int Main(string[] args)
         {
@@ -26,7 +27,9 @@ namespace TRXMerge
             }
             Console.WriteLine(fileNames.Length);
 #endif
-      
+            TrxMerger merger = new TrxMerger();
+            merger.SaveHeaderInfo(fileNames[0]);
+
             if (fileNames.Length >= 1)
             {
                 System.Xml.XmlDocument oDocFirst = new XmlDocument();
@@ -51,6 +54,7 @@ namespace TRXMerge
                 oDocFirst.Save(resultsFilePath);
 
                 SetSummary(resultsFilePath);
+                merger.WriteHeaderInfo(resultsFilePath);
             }
 
             return 0;
@@ -107,6 +111,40 @@ namespace TRXMerge
             s.time = ((end0 - start).TotalSeconds);
 
             return s;
+        }
+
+        public void SaveHeaderInfo(string input)
+        {
+            string[] file = File.ReadAllLines(input);
+            foreach (string line in file)
+            {
+                if (line.Contains("<TestRun id"))
+                {
+                    this.header = line.ToString();
+                    break;
+               }
+            }
+        }
+
+        public string WriteHeaderInfo(string input)
+        {
+            StringBuilder newFile = new StringBuilder();
+            string temp = "";
+            string[] file = File.ReadAllLines(input);
+
+            foreach (string line in file)
+            {
+                if (line.Contains("<TestRun>"))
+                {
+                    temp = line.Replace(line.ToString(), this.header);
+                    newFile.Append(temp + "\r");
+                    continue;
+                }
+                newFile.Append(line + "\r");
+            }
+
+            File.WriteAllText(input, newFile.ToString());
+            return input;
         }
 
         public static string MakeCompatXML(string input)
