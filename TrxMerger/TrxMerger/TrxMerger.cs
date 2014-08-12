@@ -10,9 +10,9 @@ namespace TRXMerge
     public class TrxMerger
     {
 
-        private const string SectionResults = @"/Results";
-        private const string SectionTestDefinitions = @"/TestDefinitions";
-        private const string SectionTestEntries = @"/TestEntries";
+        private const string SectionResults = @"//Results";
+        private const string SectionTestDefinitions = @"//TestDefinitions";
+        private const string SectionTestEntries = @"//TestEntries";
 
         private const string ResultsPathTemplate = "{0}\\FinalResults.trx";
 
@@ -38,9 +38,9 @@ namespace TRXMerge
                     oDocSecond.Load(MakeCompatXML(fileNames[i]));
 
                     ////locate sections in first and append data from second...
-                    MergeSection(out oDocFirst, oDocSecond, TrxMerger.SectionTestDefinitions);
-                    MergeSection(out oDocFirst, oDocSecond, TrxMerger.SectionResults);
-                    MergeSection(out oDocFirst, oDocSecond, TrxMerger.SectionTestEntries);
+                    oDocFirst = MergeSection(oDocFirst, oDocSecond, TrxMerger.SectionTestDefinitions);
+                    oDocFirst = MergeSection(oDocFirst, oDocSecond, TrxMerger.SectionResults);
+                    oDocFirst = MergeSection(oDocFirst, oDocSecond, TrxMerger.SectionTestEntries);
                 }
 
                 string resultsFilePath = string.Format(TrxMerger.ResultsPathTemplate, args[0]);
@@ -69,7 +69,7 @@ namespace TRXMerge
             return trxFilesList;
         }
 
-        private static void MergeSection(System.Xml.XmlDocument oDocFirst, System.Xml.XmlDocument oDocSecond, string sectionName)
+        private static System.Xml.XmlDocument MergeSection(System.Xml.XmlDocument oDocFirst, System.Xml.XmlDocument oDocSecond, string sectionName)
         {
             XmlNode oNodeWhereInsert = oDocFirst.SelectSingleNode(sectionName);
             int i = 0;
@@ -78,6 +78,8 @@ namespace TRXMerge
                 oNodeWhereInsert.AppendChild(oDocFirst.ImportNode(oDocSecond.SelectSingleNode(sectionName).ChildNodes[i], true));
                 i++;
             }
+
+            return oDocFirst;
         }
 
         public static summary GetSummary(XmlDocument doc)
@@ -172,6 +174,7 @@ namespace TRXMerge
 
             summary oSummary;
             oSummary.passed = 0;
+            oSummary.failed = 0;
 
             //count the number of test cases for total
             oSummary.total = oDoc.SelectSingleNode("//TestDefinitions").ChildNodes.Count;
@@ -187,6 +190,10 @@ namespace TRXMerge
                 {
                     oSummary.passed++;
                 }
+                else if (oDoc.SelectSingleNode("//Results").ChildNodes[i].Attributes["outcome"].Value == "Failed")
+                {
+                    oSummary.failed++;
+                }
                 i++;
             }
 
@@ -194,6 +201,7 @@ namespace TRXMerge
             master.Attributes["total"].Value = oSummary.total.ToString();
             master.Attributes["executed"].Value = oSummary.executed.ToString();
             master.Attributes["passed"].Value = oSummary.passed.ToString();
+            master.Attributes["failed"].Value = oSummary.failed.ToString();
 
             ////locate and update times
             XmlNode oTimes = oDoc.SelectSingleNode("//Times");
@@ -226,6 +234,7 @@ namespace TRXMerge
         public int total;
         public int executed;
         public int passed;
+        public int failed;
         public double time;
     }
 }
